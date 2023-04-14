@@ -1,0 +1,2 @@
+sudo nmap -sC -sV IP 
+mysql scan

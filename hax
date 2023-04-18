@@ -12,3 +12,10 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
 
 
     gobuster dir -u https://www.geeksforgeeks.com w /usr/share/wordlists/big.txt -x php,html,htm
+
+
+echo "10.129.136.91 unika.htb" | sudo tee -a /etc/hosts
+Adding this entry in the /etc/hosts file will enable the browser to resolve the hostname unika.htb to
+the corresponding IP address & thus make the browser include the HTTP header Host: unika.htb in
+every HTTP request that the browser sends to this IP address, which will make the server respond with the
+webpage for unika.htb 
